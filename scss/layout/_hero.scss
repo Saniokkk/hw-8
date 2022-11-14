@@ -1,0 +1,57 @@
+.hero {
+    max-width: 1600px;
+    background-color: var(--secondary-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 118px 0;
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
+}
+
+.hero__title {
+    width: 360px;
+    margin: 0 auto 30px auto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+    }
+}
+
+.hero__btn {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 24px;
+    margin: 0 auto;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-func);
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
+}
+
+.hero__btn:hover,
+.hero__btn:focus,
+.form__btn:hover,
+.form__btn:focus {
+    background-color: var(--hero-hover-btn-color);
+}
