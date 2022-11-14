@@ -55,14 +55,14 @@
                         </a>
                     </li>
                 </ul>
-                <button data-menu-open class="btn-open-menu js-open-menu">
+                <button data-menu-open class="btn-open-menu js-open-menu btn">
                     <svg class="icon-open-menu" width="24" height="16">
                         <use href="./images/sprite-icons.svg#icon-mob-menu"></use>
                     </svg>
                 </button>
             </div>
             <div data-menu class="mobile-menu js-menu-container" id="mobile-menu">
-                <button data-menu-close class="btn-close-menu js-close-menu">
+                <button data-menu-close class="btn-close-menu js-close-menu btn">
                     <svg class="icon-close-menu" width="18" height="18">
                         <use href="./images/sprite-icons.svg#icon-close-black"></use>
                     </svg>
@@ -198,34 +198,58 @@
                     <h2 class="work__title title">Чим ми займаємося</h2>
                     <ul class="work__list list">
                         <li class="work__item">
-                            <img
-                                class="work-logo"
-                                src="./images/work-desk.jpg"
-                                alt="Робота за комп'ютером над десктоп додатком"
-                                width="370"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/development.jpg    1x,
+                                        ./images/desktop/development@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    class="work__logo"
+                                    src="./images/development.jpg"
+                                    alt="Разработка сайта"
+                                />
+                            </picture>
                             <div class="work__overlay">
                                 <p class="work__subtitle">Десктопні додатки</p>
                             </div>
                         </li>
                         <li class="work__item">
-                            <img
-                                class="work__logo"
-                                src="./images/work-mob.jpg"
-                                alt="Робота за комп'ютером над мобільним додатком"
-                                width="370"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/design.jpg    1x,
+                                        ./images/desktop/design@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    class="work__logo"
+                                    src="./images/design.jpg"
+                                    alt="Дизайн сайта"
+                                />
+                            </picture>
                             <div class="work__overlay">
                                 <p class="work__subtitle">Мобільні додатки</p>
                             </div>
                         </li>
                         <li class="work__item">
-                            <img
-                                class="work__logo"
-                                src="./images/work-tabl.jpg"
-                                alt="Робота за комп'ютером над планшетним додатком"
-                                width="370"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/color.jpg    1x,
+                                        ./images/desktop/color@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    class="work__logo"
+                                    src="./images/color.jpg"
+                                    alt="Стиль сайта"
+                                />
+                            </picture>
                             <div class="work__overlay">
                                 <p class="work__subtitle">Дізайнерські додатки</p>
                             </div>
@@ -233,17 +257,39 @@
                     </ul>
                 </div>
             </section>
-            <!-- <section class="team section">
+            <section class="team section">
                 <div class="container">
                     <h2 class="team__title title">Наша команда</h2>
                     <ul class="team__list list">
                         <li class="team__item">
-                            <img
-                                class="team__foto"
-                                src="./images/employee1.jpg"
-                                alt="Бородатий хлопец в окулярах"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/mobile/igor.jpg    1x,
+                                        ./images/mobile/igor@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet/igor.jpg    1x,
+                                        ./images/tablet/igor@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop/igor.jpg    1x,
+                                        ./images/desktop/igor@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    class="team__foto"
+                                    src="./images/igor.jpg"
+                                    alt="Бородатий хлопец в окулярах"
+                                />
+                            </picture>
                             <div class="team__description">
                                 <h3 class="team__name title">Ігор Дем'яненко</h3>
                                 <p class="team__text">Product Designer</p>
@@ -288,12 +334,34 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                class="team__foto"
-                                src="./images/employee2.jpg"
-                                alt="Блондинка в окулярах"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/mobile/olga.jpg    1x,
+                                        ./images/mobile/olga@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet/olga.jpg    1x,
+                                        ./images/tablet/olga@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop/olga.jpg    1x,
+                                        ./images/desktop/olga@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    class="team__foto"
+                                    src="./images/olga.jpg"
+                                    alt="Блондинка в окулярах"
+                                />
+                            </picture>
                             <div class="team__description">
                                 <h3 class="team__name title">Ольга Рєпіна</h3>
                                 <p class="team__text">Frontend Developer</p>
@@ -338,12 +406,34 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                class="team__foto"
-                                src="./images/employee3.jpg"
-                                alt="Усміхаючий хлопец в світлій сорочці"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/mobile/nikolay.jpg    1x,
+                                        ./images/mobile/nikolay@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet/nikolay.jpg    1x,
+                                        ./images/tablet/nikolay@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop/nikolay.jpg    1x,
+                                        ./images/desktop/nikolay@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    class="team__foto"
+                                    src="./images/nikolay.jpg"
+                                    alt="Усміхаючий хлопец в світлій сорочці"
+                                />
+                            </picture>
                             <div class="team__description">
                                 <h3 class="team__name title">Микола Тарасов</h3>
                                 <p class="team__text">Marketing</p>
@@ -388,12 +478,34 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                class="team__foto"
-                                src="./images/employee4.jpg"
-                                alt="Бородатий брюнет в окулярах"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/mobile/michael.jpg    1x,
+                                        ./images/mobile/michael@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet/michael.jpg    1x,
+                                        ./images/tablet/michael@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop/michael.jpg    1x,
+                                        ./images/desktop/michael@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    class="team__foto"
+                                    src="./images/michael.jpg"
+                                    alt="Бородатий брюнет в окулярах"
+                                />
+                            </picture>
                             <div class="team__description">
                                 <h3 class="team__name title">Михайло Єрмаков</h3>
                                 <p class="team__text">UI Designer</p>
@@ -439,7 +551,7 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
             <section class="section clients">
                 <div class="container">
                     <h2 class="clients__title">Постійні клієнти</h2>
