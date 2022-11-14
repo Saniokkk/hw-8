@@ -1415,8 +1415,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
-  width: 528px;
+  width: 80%;
   margin: 0 auto;
   padding: 40px;
   background-color: var(--primary-background-color);
@@ -1433,6 +1432,12 @@ img {
           transition-duration: 700ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .btn-close {
@@ -1656,7 +1661,7 @@ img {
 }
 
 .modal__form-btn {
-  width: 200px;
+  min-width: 160px;
   height: 50px;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -1670,4 +1675,9 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal__form-btn {
+    width: 200px;
+  }
 }/*# sourceMappingURL=main.css.map */
