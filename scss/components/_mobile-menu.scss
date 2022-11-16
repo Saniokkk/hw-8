@@ -13,7 +13,7 @@
     justify-content: space-between;
     padding: 48px 40px;
     background-color: #fff;
-    transform: translateX(-100%);
+    transform: translateX(-130%);
     @include transition(transform);
 }
 
@@ -85,6 +85,7 @@ margin-bottom: 64px;
 
 .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
